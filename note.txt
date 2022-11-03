@@ -42,3 +42,10 @@ test
     - second argument is a function that contains the expectations to test
     - third argument is timeout which is an optional argument for specifying how long to wait before aborting the test. The default timeout value is 5 secs
 
+TDD
+- a software development process where you write tests before writing the software code
+- once the tests have been written, you then write the code to ensure the tests pass
+    - create tests that verify the functionality of a specific feature
+    - write software code that will run the tests successfully when re-executed
+    - refactor the code for optimization while ensuring the test continue to pass
+- Also called red-green testing as all tests go from a red failed state to a green passed state
