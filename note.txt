@@ -1,0 +1,44 @@
+React Testing Library
+
+Jest vs RTL
+ 
+Jest
+- a JS testing framework
+- a test runner that finds tests, runs the tests, determines whether the tests passed or failed and reports it back in a human readable manner
+
+RTL
+- JS testing utility that provides virtual DOM for testing React components
+- React testing library provides DOM which we can use to interact with and verify the behavior of a react component
+- testing library is in fact a family of packages which helps test UI components 
+- the core library is called DOM Testing Library and RTL is simply a wrapper around this core library to test react applications in an easier way 
+
+There are three types of tests
+1. Unit Test
+    1. Focus is on testing the individual building blocks of an application such as a class or a function or a component
+    2. each unit or building block is tested in isolation, independent of other units 
+    3. dependencies are mocked
+    4. run in a short amount of time and make it very easy to pinpoint failures
+    5. relatively easier to write and maintain
+2. Integration test
+    1. focus is on testing a combination of units and ensuring they work together
+    2. take longer than unit test
+3. E2E tests
+    1. focus is on testing the entire application flow and ensuring it works as designed from start to finish 
+    2. involves in a real UI, a real backend database, real services etc
+    3. take the longest as they cover the most amount of code
+    4. have a cost implication as you interact with real APIs that may charge based on the number of requests 
+
+
+RTL Philosophy
+- “The more your tests resemble the way your software is used, the more confidence they can give you”
+- with RTL, we are not concerned about the implementation details of a component 
+    - we’re not testing how it is rendering text, updating the state, handling a click event
+    - we’re testing how the component behaves when the user interacts with it’
+
+
+test
+- test(name, fn, timeout)
+    - first argument is the test name used to identify the test
+    - second argument is a function that contains the expectations to test
+    - third argument is timeout which is an optional argument for specifying how long to wait before aborting the test. The default timeout value is 5 secs
+
