@@ -53,3 +53,9 @@ TDD
 Jest Watch Mode
 - it is an option that we can pass to Jest asking to watch files that have changed since the last commit and execute tests related only to those changed files
 - an optimization designed to make your tests run fast regardless of how many tests you have
+
+Filename Conventions
+- Files with .test.js or .test.tsx suffix
+- files with .spec.js or .spec.tsx suffix
+- files with .js or .tsx suffix in __tests__ folders
+    - Recommendation is to always put your tests next to the code they’re testing so that relative imports are shorter
