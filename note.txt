@@ -59,3 +59,10 @@ Filename Conventions
 - files with .spec.js or .spec.tsx suffix
 - files with .js or .tsx suffix in __tests__ folders
     - Recommendation is to always put your tests next to the code they’re testing so that relative imports are shorter
+
+Code Coverage
+- a metric that can help you understand how much of your software code is tested
+    - statement coverage: how many of the statements in the software code have been executed
+    - branches coverage: how many of the branches of the control structures(if statements for instance) have been executed
+    - function coverage: how many of the functions defined have been called 
+    - line coverage: how many of lines of source code have been tested
