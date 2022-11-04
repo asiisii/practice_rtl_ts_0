@@ -1,8 +1,6 @@
 import React from 'react'
+import { TddProps } from './tdd.types'
 
-interface TddProps {
-  name?: String
-}
 
 const Tdd = ({ name }: TddProps) => {
   return (
