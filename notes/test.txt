@@ -50,3 +50,7 @@ RTL queries
     - selected
     - checked
     - pressed
+
+- getByLabelText
+    - it will search for the label that matches the given text, then find the element associated with that label
+    - selector
