@@ -21,9 +21,12 @@ describe('<Application />', () => {
 		expect(nameEle).toBeInTheDocument()
 
 		const nameEle2 = screen.getByLabelText('Name', {
-      selector: 'input'
-    }) //use selector options for case when there are multiple label with same text but diff element
+			selector: 'input',
+		}) //use selector options for case when there are multiple label with same text but diff element
 		expect(nameEle2).toBeInTheDocument()
+
+		const nameEle3 = screen.getByPlaceholderText('fullname')
+		expect(nameEle3).toBeInTheDocument()
 
 		const bioEle = screen.getByRole('textbox', {
 			name: 'Bio',
