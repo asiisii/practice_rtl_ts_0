@@ -23,6 +23,9 @@ describe('<Application />', () => {
     })
 		expect(paraEle2).toBeInTheDocument()
 
+    const imgEle = screen.getAllByAltText('random source')
+    expect(imgEle).toBeInTheDocument()
+
 		const nameEle = screen.getByRole('textbox', {
 			name: 'Name',
 		}) //input default role is textbox
