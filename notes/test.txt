@@ -62,3 +62,6 @@ RTL queries
     - it will search for all elements that have a text node with textContent matching the given text
     - typically, used this to find paragraph, div, or span elements
     - selector (same as getByLabelText
+
+- getByDisplayValue
+    - it will returns the input, texture, or select element that has the matching display value
