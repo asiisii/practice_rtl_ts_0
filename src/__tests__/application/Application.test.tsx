@@ -20,6 +20,11 @@ describe('<Application />', () => {
 		}) //input default role is textbox
 		expect(nameEle).toBeInTheDocument()
 
+		const nameEle2 = screen.getByLabelText('Name', {
+      selector: 'input'
+    }) //use selector options for case when there are multiple label with same text but diff element
+		expect(nameEle2).toBeInTheDocument()
+
 		const bioEle = screen.getByRole('textbox', {
 			name: 'Bio',
 		}) // name options is case sensitive, use it when there are multiple elements with same role
@@ -30,6 +35,11 @@ describe('<Application />', () => {
 
 		const termsEle = screen.getByRole('checkbox')
 		expect(termsEle).toBeInTheDocument()
+
+		const termsEle2 = screen.getByLabelText(
+			'I agree to the terms and conditions'
+		)
+		expect(termsEle2).toBeInTheDocument()
 
 		const submitBtnEle = screen.getByRole('button')
 		expect(submitBtnEle).toBeInTheDocument()
