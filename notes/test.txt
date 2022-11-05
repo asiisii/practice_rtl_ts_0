@@ -69,3 +69,6 @@ RTL queries
 - getByAltText
     - it will return the element that has the given alt text
     - supports only elements which accept an alt attribute like imp, input, area, or custom html elements
+
+- getByTitle
+    - it will return the element that has the matching title attribute
