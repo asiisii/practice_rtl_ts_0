@@ -15,6 +15,14 @@ describe('<Application />', () => {
 		})
 		expect(sectionHeading).toBeInTheDocument()
 
+    const paraEle = screen.getByText('All fields are mandatory')
+    expect(paraEle).toBeInTheDocument()
+
+    const paraEle2 = screen.getByText('All fields are mandatory', {
+      selector: 'p'
+    })
+		expect(paraEle2).toBeInTheDocument()
+
 		const nameEle = screen.getByRole('textbox', {
 			name: 'Name',
 		}) //input default role is textbox
