@@ -8,6 +8,7 @@ const Application = () => {
       <p>All fields are mandatory</p>
       <span title="close">X</span>
       <img src="/somesrc" alt="random source" />
+      <div data-testid="custom-element">Custom html element</div>
 			<form>
 				<div>
 					<label htmlFor='name'>Name</label>

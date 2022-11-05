@@ -15,19 +15,22 @@ describe('<Application />', () => {
 		})
 		expect(sectionHeading).toBeInTheDocument()
 
-    const paraEle = screen.getByText('All fields are mandatory')
-    expect(paraEle).toBeInTheDocument()
+		const paraEle = screen.getByText('All fields are mandatory')
+		expect(paraEle).toBeInTheDocument()
 
-    const paraEle2 = screen.getByText('All fields are mandatory', {
-      selector: 'p'
-    })
+		const paraEle2 = screen.getByText('All fields are mandatory', {
+			selector: 'p',
+		})
 		expect(paraEle2).toBeInTheDocument()
 
-    const closeEle = screen.getByTitle('close')
-    expect(closeEle).toBeInTheDocument()
+		const closeEle = screen.getByTitle('close')
+		expect(closeEle).toBeInTheDocument()
 
-    const imgEle = screen.getAllByAltText('random source')
-    expect(imgEle).toBeInTheDocument()
+		const imgEle = screen.getAllByAltText('random source')
+		expect(imgEle).toBeInTheDocument()
+
+		const customEle = screen.getByTestId('custom-element')
+		expect(customEle).toBeInTheDocument()
 
 		const nameEle = screen.getByRole('textbox', {
 			name: 'Name',
@@ -42,7 +45,7 @@ describe('<Application />', () => {
 		const nameEle3 = screen.getByPlaceholderText('fullname')
 		expect(nameEle3).toBeInTheDocument()
 
-    const nameEle4 = screen.getByDisplayValue('asiisii')
+		const nameEle4 = screen.getByDisplayValue('asiisii')
 		expect(nameEle4).toBeInTheDocument()
 
 		const bioEle = screen.getByRole('textbox', {
