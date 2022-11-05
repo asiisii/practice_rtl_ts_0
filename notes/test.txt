@@ -1,0 +1,13 @@
+what to test?
+
+- Test to see if the component renders 
+- test to the component renders with correct props - given certain props does the component renders right html
+- test the component renders in different states. For example: if you have a nav bar the login button should render if the user is logout and not render if the user is logged in
+- test that the component correctly reacts to events
+
+
+
+What not to test?
+- implementation details:- the more your tests resembles the way your software is used the more confidence they can give you. you want tests testing the behavior and not how the behavior is implemented. this also makes refactoring easer
+- third party code:- you should be testing code that you’re writing in your project and not the code you’re consuming from an external library. Eg: if you’re using material UI, you don’t have to test the button component or the tabs component from the UI. Instead test the component that consumes the Material UI components
+- code that is not important from a user point of view:- for example: if we have written a utility function that displays date in a user-friendly format you don’t have to test if the function was called by the component, instead you should test if the date was rendered in the expected format. 
