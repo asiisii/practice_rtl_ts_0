@@ -72,3 +72,6 @@ RTL queries
 
 - getByTitle
     - it will return the element that has the matching title attribute
+    
+- getByTestId
+    - it will return the element that has the matching data-testId attribute
