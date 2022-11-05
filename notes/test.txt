@@ -11,3 +11,21 @@ What not to test?
 - implementation details:- the more your tests resembles the way your software is used the more confidence they can give you. you want tests testing the behavior and not how the behavior is implemented. this also makes refactoring easer
 - third party code:- you should be testing code that you’re writing in your project and not the code you’re consuming from an external library. Eg: if you’re using material UI, you don’t have to test the button component or the tabs component from the UI. Instead test the component that consumes the Material UI components
 - code that is not important from a user point of view:- for example: if we have written a utility function that displays date in a user-friendly format you don’t have to test if the function was called by the component, instead you should test if the date was rendered in the expected format. 
+
+RTL queries 
+- every test we write generally involves the following basic steps
+    - render the component
+    - find an element rendered by the component
+    - assert against the element found in step 2 which will pass or fail the test
+- to render the component, we use the render method from RTL
+- for assertion, we use expect passing in a value and combine it with a matcher function from jest or jest-dom
+- Queries are the methods that Testing library provides to find elements on the page
+- to find a single element on the page, we have
+    - getBy..
+    - queryBy..
+    - findBy..
+- to find multiple elements on the page, we have
+    - getAllBy..
+    - queryAllBy..
+    - findAllBy..
+- dots at the end of queries are for suffix. Suffix can be one of Role, LabelText, PlaceHolderText, Text, DisplayValue, AltText, Title and finally TestId
