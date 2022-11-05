@@ -36,6 +36,9 @@ describe('<Application />', () => {
 		const nameEle3 = screen.getByPlaceholderText('fullname')
 		expect(nameEle3).toBeInTheDocument()
 
+    const nameEle4 = screen.getByDisplayValue('asiisii')
+		expect(nameEle4).toBeInTheDocument()
+
 		const bioEle = screen.getByRole('textbox', {
 			name: 'Bio',
 		}) // name options is case sensitive, use it when there are multiple elements with same role
