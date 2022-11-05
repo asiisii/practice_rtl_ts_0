@@ -54,3 +54,6 @@ RTL queries
 - getByLabelText
     - it will search for the label that matches the given text, then find the element associated with that label
     - selector
+
+- getByPlaceHolderText
+    - it will search for all elements with a placeholder attribute and find on that matches the given text
