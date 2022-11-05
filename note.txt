@@ -66,3 +66,13 @@ Code Coverage
     - branches coverage: how many of the branches of the control structures(if statements for instance) have been executed
     - function coverage: how many of the functions defined have been called 
     - line coverage: how many of lines of source code have been tested
+
+Assertions
+- when writing tests, we often need to check that values meet certain conditions 
+- assertions decide if a test fails or pass
+
+expect
+- expect(value)
+- the argument should be the value that your code produces
+- typically, you will use expect along with a “matcher” function to assert something about a value
+- a matcher can optionally accept an argument which is the correct expected value 
