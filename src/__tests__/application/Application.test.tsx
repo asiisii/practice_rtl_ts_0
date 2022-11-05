@@ -23,6 +23,9 @@ describe('<Application />', () => {
     })
 		expect(paraEle2).toBeInTheDocument()
 
+    const closeEle = screen.getByTitle('close')
+    expect(closeEle).toBeInTheDocument()
+
     const imgEle = screen.getAllByAltText('random source')
     expect(imgEle).toBeInTheDocument()
 
