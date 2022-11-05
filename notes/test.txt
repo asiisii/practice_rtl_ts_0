@@ -57,3 +57,8 @@ RTL queries
 
 - getByPlaceHolderText
     - it will search for all elements with a placeholder attribute and find on that matches the given text
+
+- getByText
+    - it will search for all elements that have a text node with textContent matching the given text
+    - typically, used this to find paragraph, div, or span elements
+    - selector (same as getByLabelText
