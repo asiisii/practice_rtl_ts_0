@@ -65,3 +65,7 @@ RTL queries
 
 - getByDisplayValue
     - it will returns the input, texture, or select element that has the matching display value
+
+- getByAltText
+    - it will return the element that has the given alt text
+    - supports only elements which accept an alt attribute like imp, input, area, or custom html elements
