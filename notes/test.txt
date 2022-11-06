@@ -75,3 +75,17 @@ RTL queries
     
 - getByTestId
     - it will return the element that has the matching data-testId attribute
+
+
+- Priority Order for Queries
+    - “Your test should resemble how users interact with your code (component, page, etc.) as much as possible”. 
+    - getByRole - top preference for just about everything 
+    - getByLabelText
+    - getByPlaceholderText
+    - getByText
+    - getByDisplayValue
+        - try to test everything by above 5 queries then only rely on below queries
+    - getByAltText
+    - getByTitle
+        - last resort should be
+    - getByTestId
