@@ -1,0 +1,6 @@
+- findBy
+    - it returns a promise which resolves when an element is found which matches the given query
+    - the promise is rejected if no element is found or if more than one element is found after a default timeout of 1000ms
+- findAllBy
+    - returns a promise which resolves to an array of elements when any elements are found which match the given query
+    - the promise is rejected if no elements are found after a default timeout of 1000ms
