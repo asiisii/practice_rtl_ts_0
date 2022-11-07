@@ -19,3 +19,20 @@ fireEvent vs user-event
   - for example, we can dispatch the change event on an input field using fireEvent
   - when a user types into a text box, the element has to be focused, and then keyboard and input events are fired and the selection and value on the element are manipulated as they type
   - user-event unlike fireEvent, allows you to describe a user interaction instead of a concrete event. It adds visibility and interactability checks along the way and manipulates the DOM just like a user interaction in the browser would. It factors in that the browser eg. wouldn't let a user click a hidden element or type in a disabled text box
+
+
+  - Pointer interactions
+
+  for mouse click
+  - click() | dblClick() | tripleClick()
+
+  for mouse movement
+  - hover() | unHover() <- can be used to test appearance and disappearance 
+
+  pointer apis
+
+- pointer({keys: '[MouseLeft]'})   <-left mouse button is simulated
+- pointer({keys: '[MouseLeft][Mouseright]'}) <- simulates left click followed by right click
+- pointer('[MouseLeft][Mouseright]')  <- if keys is only argument to the function
+- pointer('[MouseLeft>]') <- press a button without releasing it
+- pointer('[/MouseLeft]) <- to release the previously pressed button
