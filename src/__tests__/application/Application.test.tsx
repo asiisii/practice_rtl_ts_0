@@ -23,10 +23,16 @@ describe('<Application />', () => {
 		})
 		expect(paraEle2).toBeInTheDocument()
 
+    const paraEle3 = screen.getByText(/^all fields are mandatory$/i)
+    expect(paraEle3).toBeInTheDocument()
+
+    const paraEle4 = screen.getByText(content => content.startsWith('All'))
+		expect(paraEle4).toBeInTheDocument()
+
 		const closeEle = screen.getByTitle('close')
 		expect(closeEle).toBeInTheDocument()
 
-		const imgEle = screen.getAllByAltText('random source')
+		const imgEle = screen.getByAltText('random source')
 		expect(imgEle).toBeInTheDocument()
 
 		const customEle = screen.getByTestId('custom-element')
