@@ -1,0 +1,9 @@
+** when we want to ensure an element is not present in the dom we can make use of queryBy or queryAllBy"
+
+
+- queryBy
+    - returns the matching node for a query, and return null if no elements match
+    - useful for asserting an element that is not present
+    - throws an error if more than one match is found
+- queryAllBy
+    - returns an array of all matching nodes for a query, and return an empty array if no elements match
