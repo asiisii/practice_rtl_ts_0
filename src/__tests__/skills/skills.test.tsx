@@ -15,19 +15,33 @@ describe('<Skills />', () => {
 		expect(listItemEle).toHaveLength(skills.length)
 	})
 
-  it('renders login button', () => {
-    render(<Skills skills={skills} />)
-    const btnEle = screen.getByRole('button', {
-      name: 'Login'
-    })
-    expect(btnEle).toBeInTheDocument()
-  })
+	it('renders login button', () => {
+		render(<Skills skills={skills} />)
+		const btnEle = screen.getByRole('button', {
+			name: 'Login',
+		})
+		expect(btnEle).toBeInTheDocument()
+	})
 
-  it('doesnt renders the Start learning button', () => {
+	it('doesnt renders the Start learning button', () => {
 		render(<Skills skills={skills} />)
 		const btnEle = screen.queryByRole('button', {
 			name: 'Start learning',
 		})
 		expect(btnEle).not.toBeInTheDocument()
+	})
+
+	it('renders the Start learning button EVENTUALLY', async () => {
+		render(<Skills skills={skills} />)
+		const btnEle = await screen.findByRole(
+			'button',
+			{
+				name: 'Start learning',
+			},
+			{
+				timeout: 2000,
+			}
+		)
+		expect(btnEle).toBeInTheDocument()
 	})
 })
