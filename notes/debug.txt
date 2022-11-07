@@ -1,0 +1,15 @@
+screen.debug()
+- use this to render the dom
+
+
+- logRoles
+  - first import logRoles from '@testing-library/react'
+  - assign the render method to a variable
+  - then logRoles(variable.container)
+  - this will print out a list of all the implicit aria roles within the dom
+
+
+import { logRoles } from '@testing-library/react'
+
+const view = render(<App />)
+logRoles(view.container)
