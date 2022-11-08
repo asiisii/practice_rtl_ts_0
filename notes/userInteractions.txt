@@ -36,3 +36,21 @@ fireEvent vs user-event
 - pointer('[MouseLeft][Mouseright]')  <- if keys is only argument to the function
 - pointer('[MouseLeft>]') <- press a button without releasing it
 - pointer('[/MouseLeft]) <- to release the previously pressed button
+
+
+
+
+- Keyboard interactions
+
+Utility API 
+  - type()
+  - clear()
+    -   it('clear', async () => {
+          render(<Textarea defaultValue='hello world!' />)
+          await userEvent.clear(screen.getByRole('textbox'))
+          expect(screen.getByRole('textbox')).toHaveValue('')
+        })
+  - selectOptions()
+    - 
+Convenience API 
+  - tab()
