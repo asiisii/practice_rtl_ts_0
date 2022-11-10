@@ -1,0 +1,21 @@
+Static Analysis Testing
+- Process of verifying that your code meets certain expectations without actually running it
+- it aspects such as readability, consistency, error handling, type checking, and alignment with best practices
+
+Pros
+- Ensure consistent style and formatting
+- check for common mistakes and possible bugs
+- limit the complexity of code and 
+- verify type consistency 
+
+
+- testing checks if your code works or not, whereas static analysis checks if it is written well or not
+
+
+- 5 tools of static testing
+  - TypeScript
+  - EsLint
+    - a tool for identifying and reporting on patterns found in ECMAScript/JS code, with the goal of making code more consistent and avoiding bugs
+  - Prettier
+  - Husky
+  - lint-staged
